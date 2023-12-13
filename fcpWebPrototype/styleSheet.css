@@ -102,10 +102,11 @@ a{
         "three four";
 }
 .eventText{
+    font-weight: 700;
     text-align: center;
-    font-size: 24px;
-    Padding: 100px 20px;
-    
+    font-size: 30px;
+    text-shadow: 3px 3px 2px #000505;
+    Padding: 100px 20px;    
 }
 #lists{
     display: flex;
