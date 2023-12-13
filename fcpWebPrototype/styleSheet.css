@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+body{
+	background-size: cover;
+	overflow-x: hidden;
+    overflow-y: scroll;
+}
+#bg{
+    position: sticky;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#underL{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+#underR{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+}
+h1,p{
+    color: white;
+}
+h1{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+p{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+}
+#dark{
+    color: #000505;
+}
+#content{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: #000505;
+	padding: 0px;
+}
+.headimg{
+    width: 100%;
+    padding: 0px;
+}
+#body{
+    padding: 16px;
+    background: #000505;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-justify: left;
+}
+#join{
+    padding: 8px 0;
+}
+#button{
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    align-self: center;
+    text-align: center;
+}
+#e1{
+    grid-area: one;
+    background: url(images/rocpride.jpg);
+}
+#e2{
+    grid-area: two;
+    background: url(images/pitpride.jpg);
+}
+#e3{
+    grid-area: three;
+    background: url(images/nysfair.jpg);
+}
+#e4{
+    grid-area: four;
+    background: url(images/rgmcconcert.jpg);
+}
+#events{
+    display: grid;
+    grid-template-areas: 
+        "one two"
+        "three four";
+}
+.eventText{
+    text-align: center;
+    font-size: 24px;
+    Padding: 100px 20px;
+    
+}
+#lists{
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0;
+}
+#list2{
+    padding-left: 30px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.conBox{
+    padding: 16px;
+    border-radius: 16px;
+}
+#conBox1,#conBox2,#conBox3,#conBox4{
+    color: #000505;
+    background: white;
+    margin: 8px 0;
+}
