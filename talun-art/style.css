@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    font-family: 'Lora', serif;
+    color: #e5efef;
+}
+body{
+    overflow-x: hidden;
+    background-color: #0a242f;
+}
+#header{
+    background-color: #0a242f;
+    z-index: 5;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    padding: 8px;
+    width: 100vw;
+}
+h2{
+    padding: 16px;
+}
+/*thank the Gods for W3 Schools*/
+.scroll-parent{
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+}
+.scroll-element img{
+    width: 2000px;
+}
+@keyframes primary{
+    from{margin-left: 0px;}
+    to{margin-left: -2000px;}
+}
+#primary{
+    animation-name: primary;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#cover{
+    z-index: 1;
+    width: 100vw;
+    margin-top: -42vh;
+}
+#text{
+    z-index: 2;
+    margin-top: -25vw;
+    padding-left: 16px;
+    padding-right: 50vw;
+}
+h1{
+    font-size: 60px;
+}
+p{
+    padding: 8px 16px 16px 0px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.follow{
+    text-align: center;
+    padding-top: 8px;
+}
+#follow{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+#follow img{
+    padding: 0 8px;
+    width: 5vw;
+}
+.title{
+    padding: 16px 0px 8px 16px;
+}
+.img{
+    width: 20%;
+    z-index: 3;
+    padding: 0px 8px;
+}
+.gallery{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 8px;
+}
+#footer{
+    text-align: center;
+    padding-top: 60px;
+}
+@media screen and (max-width: 1000px){
+    #text{
+        margin-top: -20vw;
+        padding-right: 16px;
+    }
+    #follow img{
+        width: 10vw;
+    }
+    .img{
+        width: 60%;
+    }
+}
